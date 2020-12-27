@@ -1,0 +1,40 @@
+{
+  "name": "node-skeleton",
+  "version": "0.0.0-alpha",
+  "description": "Skeleton node project for my projects",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run lint; jest --colors",
+    "dev": "ts-node src/index.ts",
+    "start": "ts-node dist/index.js",
+    "build": "tsc -p .",
+    "lint": "eslint -c ./.eslintrc.json src --ext ts; exit 0",
+    "lint:fix": "eslint -c ./.eslintrc.json src --ext ts --fix; exit 0",
+    "clean": "rm -rf node_modules && rm -rf coverage && rm -rf dist && rm package-lock.json; exit 0;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1shooperman/node-skeleton.git"
+  },
+  "author": "Brandon Shoop <brandon.shoop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1shooperman/node-skeleton/issues"
+  },
+  "homepage": "https://github.com/1shooperman/node-skeleton#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.16",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.16.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
